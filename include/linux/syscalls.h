@@ -1193,6 +1193,7 @@ asmlinkage long sys_signal(int sig, __sighandler_t handler);
 asmlinkage long sys_nice(int increment);
 
 /* obsolete: kernel/kexec_file.c */
+
 asmlinkage long sys_kexec_file_load(int kernel_fd, int initrd_fd,
 				    unsigned long cmdline_len,
 				    const char __user *cmdline_ptr,
@@ -1382,4 +1383,5 @@ int __sys_getsockopt(int fd, int level, int optname, char __user *optval,
 int __sys_setsockopt(int fd, int level, int optname, char __user *optval,
 		int optlen);
 asmlinkage long sys_hello(void);
+asmlinkage long sys_memory_copy(unsigned char __user *to, unsigned char __user *from, int size);
 #endif
