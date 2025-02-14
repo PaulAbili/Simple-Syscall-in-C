@@ -1,18 +1,53 @@
-Linux kernel
-============
+Project 0: VM Setup & Hello World
 
-There are several guides for kernel developers and users. These guides can
-be rendered in a number of formats, like HTML and PDF. Please read
-Documentation/admin-guide/README.rst first.
+Contact
+Author: Paul Abili
+Campus ID:QD36016
+Email:pabili1@umbc.edu
 
-In order to build the documentation, use ``make htmldocs`` or
-``make pdfdocs``.  The formatted documentation can also be read online at:
+Overview
+The goal of the project was for students to set up their virtual machine, link their github account to the terminal and to modify the kernel. Included are the files for Part 2 & 3, hello.c and copy.c respectively. The test files used are also included. All code is included within the project0 subdirectory.
 
-    https://www.kernel.org/doc/html/latest/
+Installation and Setup
+No external libraries used in this project.
+No dependencies, environmental variables or configuration files need to be set.
 
-There are various text files in the Documentation/ subdirectory,
-several of them using the Restructured Text markup notation.
+Build and Compile
+Build the project with: gcc [testFile.c] -Wall -g -o [testFile]
+Run the code with: ./[testFile]
+[testFile] :  Test file for c program being tested
+For the test files I created:
+For hello.c: [testFile.c] is [testHello.c]
+For copy.c: [testFile.c] is [testCopy.c]
 
-Please read the Documentation/process/changes.rst file, as it contains the
-requirements for building and running the kernel, and information about
-the problems which may result by upgrading your kernel.
+User-Space Drivers
+No drivers used within this project
+
+Testing
+Part 2: Test file given
+Part 3: Base Case
+With Part 3 being optional, I decided I wanted test the base case just to make sure my syscall worked
+Excepted Input: 2 Strings of the Same Length
+Expected Output: “Success”
+
+Troubleshooting
+
+Build and install your customized kernel
+Ran into dpkg-buildpackage error when building the kernel.
+Steps to complete:
+Modified the CONFIG_SYSTEM_TRUSTED_KEYS line to “”
+Ran make clean run
+
+Part 3: Add a memory copy to the kernel
+Test File always returned -1
+Steps to complete:
+Needed to add a buffer variable to store get_user value
+Needed to build the kernel before testing …
+Needed to declare incrementing variable outside of for loop
+
+References
+External Sources
+https://brennan.io/2016/11/14/kernel-dev-ep3/
+How to Fix Virtual Box Error
+https://www.youtube.com/watch?v=FMvV2e-Ghts
+
