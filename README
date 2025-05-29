@@ -1,12 +1,10 @@
-Project 0: VM Setup & Hello World
-
 Contact
 Author: Paul Abili
 Campus ID:QD36016
 Email:pabili1@umbc.edu
 
 Overview
-The goal of the project was for students to set up their virtual machine, link their github account to the terminal and to modify the kernel. Included are the files for Part 2 & 3, hello.c and copy.c respectively. The test files used are also included. All code is included within the project0 subdirectory.
+The goal of this project was to create two simple syscalls: one for "hello world" and another to recreate C's memcpy
 
 Installation and Setup
 No external libraries used in this project.
@@ -24,9 +22,7 @@ User-Space Drivers
 No drivers used within this project
 
 Testing
-Part 2: Test file given
-Part 3: Base Case
-With Part 3 being optional, I decided I wanted test the base case just to make sure my syscall worked
+For memcpy:
 Excepted Input: 2 Strings of the Same Length
 Expected Output: “Success”
 
@@ -39,8 +35,9 @@ Modified the CONFIG_SYSTEM_TRUSTED_KEYS line to “”
 Ran make clean run
 
 
-Part 3: Add a memory copy to the kernel
+Memcpy: Add a memory copy to the kernel
 Test File always returned -1
+
 Steps to complete:
 Needed to add a buffer variable to store get_user value
 Needed to build the kernel before testing …
