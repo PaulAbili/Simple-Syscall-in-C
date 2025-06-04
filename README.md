@@ -28,14 +28,13 @@ For memcpy:
 Excepted Input: 2 Strings of the Same Length
 Expected Output: “Success”
 
-## roubleshooting
+## Troubleshooting
 
 Build and install your customized kernel
 Ran into dpkg-buildpackage error when building the kernel.
 Steps to complete:
 Modified the CONFIG_SYSTEM_TRUSTED_KEYS line to “”
 Ran make clean run
-
 
 Memcpy: Add a memory copy to the kernel
 Test File always returned -1
