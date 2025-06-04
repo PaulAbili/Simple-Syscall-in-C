@@ -1,18 +1,18 @@
 # Simple C Syscall
 
-Contact
+### Contact
 Author: Paul Abili
 Campus ID:QD36016
 Email:pabili1@umbc.edu
 
-Overview
+### Overview
 The goal of this project was to create two simple syscalls: one for "hello world" and another to recreate C's memcpy
 
-Installation and Setup
+### Installation and Setup
 No external libraries used in this project.
 No dependencies, environmental variables or configuration files need to be set.
 
-Build and Compile
+### Build and Compile
 Build the project with: gcc [testFile.c] -Wall -g -o [testFile]
 Run the code with: ./[testFile]
 [testFile] :  Test file for c program being tested
@@ -20,15 +20,15 @@ For the test files I created:
 For hello.c: [testFile.c] is [testHello.c]
 For copy.c: [testFile.c] is [testCopy.c]
 
-User-Space Drivers
+### User-Space Drivers
 No drivers used within this project
 
-Testing
+### Testing
 For memcpy:
 Excepted Input: 2 Strings of the Same Length
 Expected Output: “Success”
 
-Troubleshooting
+## roubleshooting
 
 Build and install your customized kernel
 Ran into dpkg-buildpackage error when building the kernel.
