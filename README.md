@@ -3,7 +3,6 @@
 ### Contact
 
 **Author:** Paul Abili <br>
-**Campus ID:** QD36016 <br>
 **Email:** pabili1@umbc.edu <br>
 
 ### Overview
