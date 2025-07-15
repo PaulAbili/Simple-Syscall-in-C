@@ -1,9 +1,9 @@
 # Simple C Syscall
 
 ### Contact
-Author: Paul Abili
-Campus ID:QD36016
-Email:pabili1@umbc.edu
+Author: Paul Abili <br>
+Campus ID:QD36016 <br>
+Email:pabili1@umbc.edu <br>
 
 ### Overview
 The goal of this project was to create two simple syscalls: one for "hello world" and another to recreate C's memcpy
